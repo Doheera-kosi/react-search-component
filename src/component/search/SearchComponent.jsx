@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RiSearchLine } from 'react-icons/ri';
 
 function SearchComponent() {
+  const [searchText, setSearchTex] = useState;
+
+  const handleSearchInput = (event) => {
+    setSearchTex(event.target.value);
+  };
+
   return (
     <div>
       <div className="search-container">
-        <input type="text" name="t" id="" placeholder="Search movies..." />
+        <input type="text" name="t" id="" placeholder="Search movies..." value={searchText} onChange={handleSearchInput} />
         <RiSearchLine />
       </div>
       <ul className="movie-list">
