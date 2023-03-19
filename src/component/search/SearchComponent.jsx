@@ -1,25 +1,32 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import { RiSearchLine } from 'react-icons/ri';
+import movies from './movies';
 
 function SearchComponent() {
-  const [searchText, setSearchTex] = useState;
+  const [searchText, setSearchTex] = useState('');
 
   const handleSearchInput = (event) => {
     setSearchTex(event.target.value);
   };
 
+  const filteredMovies = movies.filter((movie) => movie.title.toLowerCase().includes(searchText.toLocaleLowerCase()));
+
   return (
     <div>
       <div className="search-container">
-        <input type="text" name="t" id="" placeholder="Search movies..." value={searchText} onChange={handleSearchInput} />
+        <input type="text" placeholder="Search movies..." value={searchText} onChange={handleSearchInput} />
         <RiSearchLine />
       </div>
       <ul className="movie-list">
-        <li>Movie 1</li>
-        <li>Movie 2</li>
-        <li>Movie 3</li>
-        <li>Movie 4</li>
-        <li>Movie 5</li>
+        {filteredMovies.map((movie) => (
+          <li key={movie.title}>
+            {movie.title}
+            (
+            {movie.year}
+            )
+          </li>
+        ))}
       </ul>
     </div>
   );
