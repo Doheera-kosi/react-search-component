@@ -1,0 +1,42 @@
+.main-container {
+  margin: 10rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 70vw;
+  height: 1.8rem;
+  border-radius: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: rgb(179, 179, 169);
+  width: 75%;
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  box-shadow: 1px 3px 3px 2px;
+}
+
+.movie-list li {
+  margin-bottom: 0.5rem;
+}

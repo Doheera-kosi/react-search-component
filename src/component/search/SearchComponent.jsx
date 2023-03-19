@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { RiSearchLine } from 'react-icons/ri';
 import movies from './movies';
+import './search.css';
 
 function SearchComponent() {
   const [searchText, setSearchTex] = useState('');
@@ -13,7 +14,7 @@ function SearchComponent() {
   const filteredMovies = movies.filter((movie) => movie.title.toLowerCase().includes(searchText.toLocaleLowerCase()));
 
   return (
-    <div>
+    <div className="main-container">
       <div className="search-container">
         <input type="text" placeholder="Search movies..." value={searchText} onChange={handleSearchInput} />
         <RiSearchLine />

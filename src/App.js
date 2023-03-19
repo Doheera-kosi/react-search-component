@@ -4,7 +4,7 @@ import SearchComponent from './component/search/SearchComponent';
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <SearchComponent />
     </div>
   );
