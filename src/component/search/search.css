@@ -29,7 +29,7 @@ input {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   background: rgb(179, 179, 169);
   width: 75%;
   border-radius: 0.2rem;
