@@ -28,11 +28,14 @@
 
 **[Movie_List_Filter]** is a simple react app/component demostrating a search algorithm to filtering/searching through a list of movies
 
+## Screenshots
+<img src="./src/assets/img/rsc1.PNG">
+<img src="./src/assets/img/rsc2.PNG">
+<img src="./src/assets/img/rsc3.PNG">
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
