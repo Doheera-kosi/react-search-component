@@ -46,3 +46,10 @@ input {
 .movie-list li {
   margin-bottom: 0.5rem;
 }
+
+@media (min-width:1025px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
